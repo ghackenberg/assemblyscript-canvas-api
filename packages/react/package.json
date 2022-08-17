@@ -1,0 +1,44 @@
+{
+    "name": "webassembly-boilerplate-react",
+    "version": "0.0.1",
+    "description": "TypeScript and React package",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "author": {
+        "name": "Georg Hackenberg",
+        "email": "ghackenberg@gmail.com"
+    },
+    "contributors": [
+        {
+            "name": "Georg Hackenberg",
+            "email": "ghackenberg@gmail.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ghackenberg/webassembly-boilerplate.git",
+        "directory": "packages/react"
+    },
+    "scripts": {
+        "build": "npm run build:release",
+        "build:debug": "webpack --mode development --devtool inline-source-map",
+        "build:release": "webpack --mode production",
+        "serve": "webpack serve --open --mode development --devtool inline-source-map"
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "webassembly-boilerplate-wasm": "^0.0.1"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.17",
+        "@types/react-dom": "^18.0.6",
+        "html-webpack-plugin": "^5.5.0",
+        "ts-loader": "^9.3.1",
+        "typescript": "^4.7.4",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.10.0"
+    }
+}

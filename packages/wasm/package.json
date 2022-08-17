@@ -1,0 +1,35 @@
+{
+    "name": "webassembly-boilerplate-wasm",
+    "version": "0.0.1",
+    "description": "WebAssembly package",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "main": "./build/bundle.js",
+    "types": "./build/bundle.d.ts",
+    "author": {
+        "name": "Georg Hackenberg",
+        "email": "ghackenberg@gmail.com"
+    },
+    "contributors": [
+        {
+            "name": "Georg Hackenberg",
+            "email": "ghackenberg@gmail.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ghackenberg/webassembly-boilerplate.git",
+        "directory": "packages/wasm"
+    },
+    "scripts": {
+        "build": "npm run build:release",
+        "build:debug": "asc --config asconfig.json --target debug",
+        "build:release": "asc --config asconfig.json --target release",
+        "serve": "onchange ./src/scripts/**.*.ts -- asc --config asconfig.json --target debug"
+    },
+    "devDependencies": {
+        "assemblyscript": "^0.20.19",
+        "onchange": "^7.1.0"
+    }
+}

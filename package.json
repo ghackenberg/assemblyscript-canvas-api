@@ -1,0 +1,30 @@
+{
+    "name": "webassembly-boilerplate",
+    "version": "0.0.1",
+    "description": "WebAssembly with AssemblyScript, TypeScript, and React",
+    "license": "MIT",
+    "private": true,
+    "author": {
+        "name": "Georg Hackenberg",
+        "email": "ghackenberg@gmail.com"
+    },
+    "contributors": [
+        {
+            "name": "Georg Hackenberg",
+            "email": "ghackenberg@gmail.com"
+        }
+    ],
+    "workspaces": [
+        "packages/react",
+        "packages/wasm"
+    ],
+    "scripts": {
+        "build": "workspaces-run -- npm run build",
+        "build:debug": "workspaces-run -- npm run build:debug",
+        "build:release": "workspaces-run -- npm run build:release",
+        "serve": "npm run build:debug -w packages/wasm && workspaces-run --parallel -- npm run serve"
+    },
+    "dependencies": {
+        "workspaces-run": "^1.0.1"
+    }
+}
