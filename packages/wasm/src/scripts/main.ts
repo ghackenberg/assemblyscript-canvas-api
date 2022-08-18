@@ -1,8 +1,7 @@
 import { drawLine } from './webassembly-boilerplate-glue'
 
-export function add(a: i32, b: i32): i32 {
-    drawLine(0, 0, 100, 100)
-    drawLine(0, 0, 100, 100)
-
-    return a + b
+export function drawLines(ctx: externref, count: i32): void {
+    while (count-- > 0) {
+        drawLine(ctx, 0 + 10 * count, 0, 100 + 10 * count, 100)
+    }
 }

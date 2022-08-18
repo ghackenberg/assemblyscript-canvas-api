@@ -1,8 +1,16 @@
 import * as React from 'react'
-import { add } from 'webassembly-boilerplate-wasm'
+import { drawLines } from 'webassembly-boilerplate-wasm'
 
 export const Root = () => {
+    const canvas = React.useRef<HTMLCanvasElement>()
+    const [context, setContext] = React.useState<CanvasRenderingContext2D>()
+    React.useEffect(() => {
+        canvas.current && setContext(canvas.current.getContext('2d'))
+    }, [canvas])
+    React.useEffect(() => {
+        context && drawLines(context, 15)
+    }, [context])
     return (
-        <h1>{add(1, 2)}</h1>
+        <canvas ref={canvas}/>
     )
 }

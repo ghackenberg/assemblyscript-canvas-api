@@ -1,1 +1,1 @@
-export declare function drawLine(x1: f32, y1: f32, x2: f32, y2: f32): void
+export declare function drawLine(ctx: externref, x1: f64, y1: f64, x2: f64, y2: f64): void

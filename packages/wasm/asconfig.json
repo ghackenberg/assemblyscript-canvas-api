@@ -4,7 +4,8 @@
     ],
     "options": {
         "outFile": "./build/bundle.wasm",
-        "bindings": "esm"
+        "bindings": "esm",
+        "enable": "reference-types"
     },
     "targets": {
         "release": {
