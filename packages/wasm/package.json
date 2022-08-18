@@ -26,7 +26,7 @@
         "build": "npm run build:release",
         "build:debug": "asc --config asconfig.json --target debug",
         "build:release": "asc --config asconfig.json --target release",
-        "serve": "onchange ./src/scripts/**.*.ts -- asc --config asconfig.json --target debug"
+        "serve": "onchange \"src/scripts/**/*.ts\" -- asc --config asconfig.json --target debug --stats"
     },
     "dependencies": {
         "webassembly-boilerplate-glue": "file:../glue"

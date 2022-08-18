@@ -1,6 +1,8 @@
-import { test } from './webassembly-boilerplate-glue'
+import { drawLine } from './webassembly-boilerplate-glue'
 
 export function add(a: i32, b: i32): i32 {
-    test()
+    drawLine(0, 0, 100, 100)
+    drawLine(0, 0, 100, 100)
+
     return a + b
 }
