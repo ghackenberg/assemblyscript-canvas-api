@@ -10,6 +10,40 @@ The project contains the following packages.
 * [webassembly-builderplate-wasm](./packages/wasm/) - **[AssemblyScript only]** - Using the Native HTML 5 Canvas API to draw hardware-accelerated 2D graphics
 * [webassembly-builderplate-react](./packages/react/) - **[TypeScript only]** - Integrating the WebAssemlby package into a classical React frontend
 
+## Examples
+
+The following examples demonstrate the use of the [Glue Package](./packages/glue/) for accessing the **Native HTML 5 Canvas API** in **AssemblyScript**. Note that we expose a purely functional variant of the API. In this variant the 2D rendering context is a function parameter rather than the enclosing object. We designed this approach so that API calls from within WebAssembly cause **minimal overhead**.
+
+### AssemblyScript Example
+
+```typescript
+// Import HTML 5 Canvas API bindings from Glue Package
+import { clearRect } from 'webassembly-boilerplate-glue/assembly/'
+import { fillStyle } from 'webassembly-boilerplate-glue/assembly/'
+import { fillRect } from 'webassembly-boilerplate-glue/assembly/'
+
+// Export draw function to TypeScript/JavaScript
+export function draw(ctx: externref): void {
+    clearRect(ctx, 0, 0, 100, 100)
+    fillStyle(ctx, 'blue')
+    fillRect(ctx, 0, 0, 100, 100)
+}
+```
+
+### TypeScript Example
+
+```typescript
+// Import draw function from AssemblyScript build
+import { draw } from 'webassembly-boilerplate-wasm'
+
+// Create HTML 5 Canvas object
+const canvas = document.createElement('canvas')
+// Get 2D rendering context
+const context = canvas.getContext('2d')
+// Pass 2D rendering context to WebAssembly
+draw(context)
+```
+
 ## Dependencies
 
 We distinguish between build-time and run-time dependencies.
