@@ -19,9 +19,9 @@
         "packages/wasm"
     ],
     "scripts": {
-        "build": "workspaces-run -- npm run build",
-        "build:debug": "workspaces-run -- npm run build:debug",
-        "build:release": "workspaces-run -- npm run build:release",
+        "build": "npm run build -w packages/wasm && npm run build -w packages/react",
+        "build:debug": "npm run build:debug -w packages/wasm && npm run build:debug -w packages/react",
+        "build:release": "npm run build:release -w packages/wasm && npm run build:release -w packages/react",
         "serve": "npm run build:debug -w packages/wasm && workspaces-run --parallel -- npm run serve"
     },
     "dependencies": {

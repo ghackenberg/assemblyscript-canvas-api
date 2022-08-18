@@ -28,6 +28,9 @@
         "build:release": "asc --config asconfig.json --target release",
         "serve": "onchange ./src/scripts/**.*.ts -- asc --config asconfig.json --target debug"
     },
+    "dependencies": {
+        "webassembly-boilerplate-glue": "file:../glue"
+    },
     "devDependencies": {
         "assemblyscript": "^0.20.19",
         "onchange": "^7.1.0"

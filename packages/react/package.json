@@ -1,7 +1,7 @@
 {
     "name": "webassembly-boilerplate-react",
     "version": "0.0.1",
-    "description": "TypeScript and React package",
+    "description": "React package",
     "license": "MIT",
     "private": true,
     "type": "module",
@@ -29,7 +29,8 @@
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "webassembly-boilerplate-wasm": "^0.0.1"
+        "webassembly-boilerplate-glue": "file:../glue",
+        "webassembly-boilerplate-wasm": "file:../wasm"
     },
     "devDependencies": {
         "@types/react": "^18.0.17",

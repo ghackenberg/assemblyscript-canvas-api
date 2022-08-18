@@ -1,0 +1,33 @@
+{
+    "name": "webassembly-boilerplate-glue",
+    "version": "0.0.1",
+    "description": "Glue package",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "main": "./src/scripts/main.ts",
+    "author": {
+        "name": "Georg Hackenberg",
+        "email": "ghackenberg@gmail.com"
+    },
+    "contributors": [
+        {
+            "name": "Georg Hackenberg",
+            "email": "ghackenberg@gmail.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ghackenberg/webassembly-boilerplate.git",
+        "directory": "packages/glue"
+    },
+    "scripts": {
+        "build": "",
+        "build:debug": "",
+        "build:release": "",
+        "serve": ""
+    },
+    "devDependencies": {
+        "typescript": "^4.7.4"
+    }
+}

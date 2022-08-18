@@ -2,5 +2,9 @@
     "extends": "assemblyscript/std/assembly.json",
     "include": [
         "./src/scripts/main.ts"
-    ]
+    ],
+    "compilerOptions": {
+        "module": "ES2022",
+        "target": "ES2022"
+    }
 }

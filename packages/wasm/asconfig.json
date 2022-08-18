@@ -3,15 +3,14 @@
         "./src/scripts/main.ts"
     ],
     "options": {
+        "outFile": "./build/bundle.wasm",
         "bindings": "esm"
     },
     "targets": {
         "release": {
-            "outFile": "./build/bundle.wasm",
             "optimize": true
         },
         "debug": {
-            "textFile": "./build/bundle.wat",
             "debug": true,
             "sourceMap": true
         }
