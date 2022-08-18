@@ -1,4 +1,4 @@
-import { beginPath, clearRect, lineTo, lineWidth, moveTo, stroke, strokeStyle } from './webassembly-boilerplate-glue'
+import { beginPath, clearRect, lineTo, lineWidth, moveTo, stroke, strokeStyle } from 'webassembly-boilerplate-glue/assembly/'
 
 export function drawLines(ctx: externref, count: i32): void {
     clearRect(ctx, 0, 0, 100, 100)

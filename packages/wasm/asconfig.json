@@ -1,6 +1,6 @@
 {
     "entries": [
-        "./src/scripts/main.ts"
+        "./assembly/index.ts"
     ],
     "options": {
         "outFile": "./build/bundle.wasm",

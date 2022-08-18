@@ -1,10 +1,6 @@
 {
     "extends": "assemblyscript/std/assembly.json",
-    "include": [
-        "./assembly/index.ts"
-    ],
     "compilerOptions": {
-        "moduleResolution": "node",
         "module": "ES2022",
         "target": "ES2022"
     }
