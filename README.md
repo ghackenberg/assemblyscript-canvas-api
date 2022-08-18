@@ -12,7 +12,7 @@ The project contains the following packages.
 
 ## Examples
 
-The following examples demonstrate the use of the [Glue Package](./packages/glue/) for accessing the **Native HTML 5 Canvas API** in **AssemblyScript**. Note that we expose a purely functional variant of the API. In this variant the 2D rendering context is a function parameter rather than the enclosing object. We designed this approach so that API calls from within WebAssembly cause **minimal overhead**.
+The following examples demonstrate the use of the [Glue Package](./packages/glue/) for accessing the **Native HTML 5 Canvas API** in **AssemblyScript**. Note that we expose a purely **functional variant** of the API. In this variant the 2D rendering context is a function parameter rather than the enclosing object. We designed this approach so that API calls from within WebAssembly cause **minimal overhead**.
 
 ### AssemblyScript Example
 
