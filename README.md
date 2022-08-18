@@ -7,7 +7,7 @@ This **boilerplate project** provides a **React frontend** written in **TypeScri
 The project contains the following packages.
 
 * [webassembly-builderplate-glue](./packages/glue/) - **[AssemblyScript + TypeScript]** - Exposing the Native HTML 5 Canvas API to AssemblyScript
-* [webassembly-builderplate-wasm](./packages/wasm/) - **[AssemblyScript only]** - Using the Native HTML 5 Canvas API to draw hardware-accelerated 2D graphics
+* [webassembly-builderplate-wasm](./packages/wasm/) - **[AssemblyScript only]** - Using the Native HTML 5 Canvas API for drawing hardware-accelerated 2D graphics
 * [webassembly-builderplate-react](./packages/react/) - **[TypeScript only]** - Integrating the WebAssemlby package into a classical React frontend
 
 ## Examples
