@@ -1,4 +1,4 @@
-# WebAssembly Boilerplate License
+MIT License
 
 Copyright 2022 Georg Hackenberg
 
