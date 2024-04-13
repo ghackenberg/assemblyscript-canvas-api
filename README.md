@@ -1,5 +1,7 @@
 # AssemblyScript Canvas API
 
+![](./images/social_preview.png)
+
 This **boilerplate project** provides a **React frontend** written in **TypeScript**, which integrates a **WebAssembly** written in **AssemblyScript**. The **WebAssembly** uses the **Native HTML 5 Canvas API** for drawing **hardware-accelerated 2D graphics**.
 
 ## Packages
